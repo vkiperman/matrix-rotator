@@ -1,0 +1,18 @@
+
+@{meta('Matrix', 'matrix', 'ng angularjs')}
+
+<!-- /app/css/ -->
+@{ngStyle('app')}
+
+<!-- cdnjs -->
+@{ngLocale('en-us')}
+
+<!-- /app/controllers/ -->
+@{ngController('matrix')}
+
+<!-- /app/directives/ -->
+@{ngDirective('matrix')}
+
+<div ng-controller="MatrixCtrl">
+	<matrix-rotator></matrix-rotator>
+</div>

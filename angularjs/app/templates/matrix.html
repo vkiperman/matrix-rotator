@@ -1,0 +1,26 @@
+<div class="overlay"></div>
+
+
+<div class="z2 ">
+	<h1>Rotating Matrix {{matrix.length}}</h1>
+
+	<table class="matrix center">
+		<tr>
+			<th></th>
+			<th ng-repeat="char in alphaUpper| limitTo:matrix[0].length" ng-bind="char"></th>
+		</tr>
+		<tr ng-repeat="rows in matrix track by $index" ng-if="matrix[$index][0]"
+			ng-style="(rotation % 2) && setColor(rotation, $index)">
+			<th ng-bind="$index+1"></th>
+			<td ng-repeat="char in rows track by $index" ng-bind="char"
+				ng-style="!(rotation % 2) && setColor(rotation, $index)"></td>
+		</tr>
+	</table>
+
+	<div class="center centerText paddingMed">
+		<input ng-model="across" type="range" string-to-number max="12" min="1" />
+		<br>
+		<button ng-click="counterclockwise()">&#8634; Rotate Counterclockwise</button>
+		<button ng-click="clockwise()">&#8635; Rotate Clockwise</button>
+	</div>
+</div>
