@@ -4,7 +4,7 @@ Greetings friends.  This is a fun little exercise I developed using AngularJS 1.
 
 ## What to expect.
 
-The interface will enable you to change the number of columns (up to 12) via a range slider. The buttons enable user to rotate the matrix +/-90 degrees.  The content and the color reflect the rotation.
+The interface will enable you to change the number of columns (up to 12) via a range slider. The buttons enable users to rotate the matrix +/-90 degrees.  The content and the color reflect the rotation.
 
 ## Please follow the instructions below and enjoy!
 
